@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("I have changed the app")
-            .padding()
+        
+        NavigationView {
+            
+            NavigationLink(destination: DetailView()) {
+                
+                Text("Go to the Detail View")
+            }
+            .navigationBarTitle("Content View")
+        }
     }
 }
 
